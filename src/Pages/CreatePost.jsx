@@ -52,11 +52,14 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImage(true);
-        const response = await fetch("https://bell-bottoms-eagle.cyclic.app/", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ prompt: form.prompt }),
-        });
+        const response = await fetch(
+          "https://ai-art.up.railway.app/api/v1/dalle",
+          {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ prompt: form.prompt }),
+          }
+        );
         const data = await response.json();
         setForm({ ...form, photo: `${data.photo}` });
       } catch (error) {

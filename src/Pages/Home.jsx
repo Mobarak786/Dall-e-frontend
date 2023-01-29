@@ -27,7 +27,7 @@ const Home = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://bell-bottoms-eagle.cyclic.app/api/v1/post",
+          "https://ai-art.up.railway.app/api/v1/post",
           {
             method: "GET",
             headers: {

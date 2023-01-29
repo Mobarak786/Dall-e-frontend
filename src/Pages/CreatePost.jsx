@@ -22,11 +22,11 @@ const CreatePost = () => {
         e.preventDefault();
         setGeneratingImage(true);
         const response = await fetch(
-          "https://ai-art.up.railway.app/api/v1/dalle",
+          "https://ai-art.up.railway.app/api/v1/post",
           {
             method: "POST",
             headers: { "content-type": "application/json" },
-            body: JSON.stringify(form),
+            body: JSON.stringify(form)
           }
         );
         await response.json();

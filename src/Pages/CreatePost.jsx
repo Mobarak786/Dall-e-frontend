@@ -22,7 +22,7 @@ const CreatePost = () => {
         e.preventDefault();
         setGeneratingImage(true);
         const response = await fetch(
-          "https://bell-bottoms-eagle.cyclic.app/api/v1/dalle",
+          "https://ai-art.up.railway.app/api/v1/dalle",
           {
             method: "POST",
             headers: { "content-type": "application/json" },

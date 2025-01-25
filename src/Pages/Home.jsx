@@ -27,7 +27,7 @@ const Home = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://ai-art.up.railway.app/api/v1/post",
+          "https://ai-image-generation-production.up.railway.app/api/v1/post",
           {
             method: "GET",
             headers: {

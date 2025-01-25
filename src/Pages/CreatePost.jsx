@@ -22,7 +22,7 @@ const CreatePost = () => {
         e.preventDefault();
         setGeneratingImage(true);
         const response = await fetch(
-          "https://ai-art.up.railway.app/api/v1/post",
+          "https://ai-image-generation-production.up.railway.app/"
           {
             method: "POST",
             headers: { "content-type": "application/json" },
